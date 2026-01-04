@@ -69,24 +69,23 @@ Linux
 * Ubuntu-version: `lsb_release -a`
 * OS: `uname -a`
 
-* Adding to PATH variable: `export PATH="/path/to/app/executable/file/directory:$PATH"`
-						 path+="/path/to/app/executable/file/directory"
-Symbolic-link executable(s) to a bin directory: ln -s "/path/to/app/executable/file/" ~/bin  [-s parameter allows soft link (default = hard link)]
+* Adding to PATH variable: 
+    * `export PATH="/path/to/app/executable/file/directory:$PATH"`
+    * path+="/path/to/app/executable/file/directory"
+Symbolic-link executable(s) to a bin directory: 
+    * `ln -s "/path/to/app/executable/file/" ~/bin` [-s parameter allows soft link (default = hard link)]
 
-* Load library: LD_PRELOAD=<path to .so>
-* Change file extensions: for file in *.tx; do mv -- "$file" "$(basename -- "$file" .tx).txt";
-* apt-resource: sudo nano /etc/apt/sources.list => deb [trusted=yes] https://download.eclipse.org/zenoh/debian-repo/ (Example Zenoh repo)
-* Modify Backend Visual Toolkit: export WGPU_BACKEND=vulkan
+* Load library: `LD_PRELOAD=<path to .so>`
+* Change file extensions: `for file in *.tx; do mv -- "$file" "$(basename -- "$file" .tx).txt";`
+* apt-resource: `sudo nano /etc/apt/sources.list` => deb [trusted=yes] https://download.eclipse.org/zenoh/debian-repo/ (Example Zenoh repo)
+* Modify Backend Visual Toolkit: `export WGPU_BACKEND=vulkan`
 
-Run device on performance mode:
+* Run device on performance mode:
+    * `echo performance | sudo tee /sys/devices/system/cpu/cpufreq/policy0/scaling_governor`
+    * `cat /sys/devices/system/cpu/cpufreq/policy0/scaling_governor`
 
-`echo performance | sudo tee /sys/devices/system/cpu/cpufreq/policy0/scaling_governor`
-
-`cat /sys/devices/system/cpu/cpufreq/policy0/scaling_governor`
-
-Disable all services: `sudo systemctl set-default multi-user`
-
-List all camera formats: `v4l2-ctl --device /dev/video<x> --list-formats`
+* Disable all services: `sudo systemctl set-default multi-user`
+* List all camera formats: `v4l2-ctl --device /dev/video<x> --list-formats`
 
 Jetson
 =======
