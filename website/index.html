@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Santos Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        p{text-align: left;}
+    </style>
+</head>
+    
+<body>
+    <section class="header-home" id="home">
+        <nav>
+            <a href="index.html"><img src=images/schulich_logo.png></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#education">EDUCATION</a></li>
+                    <li><a href="#project">PROJECTS</a></li>
+                    <li><a href="interpersonal.html">INTERPERSONAL</a></li>
+                    <li><a href="notes_schematics.html">NOTES & SCHEMATICS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <!-----------------------------------------------------------------Introduction----------------------------------------------------------------------------->
+        <div class="text-box">
+            <img src="images/profilepic.jpg" width="250" height="350" alt="A picture of John Santos" class="picLeft" />
+            <h1>
+                Hi, I am <strong> John<br>Santos</strong>
+            </h1>
+            <div class="boxed">
+                <span class="half_highlight">
+                    Electrical and Digital Engineering
+                </span> 
+            </div>
+            <a href="#footer" class="contact-btn">CONTACT ME</a>
+        </div>
+    </section>
+    
+<!------------------------------------------------------------------------------------------------------ABOUT ME---------------------------------------------------------------------------------------------------->
+    
+<section class="aboutme" id="about">
+    
+    <div class="aboutme-title">
+        <h1 style="font-size:60px;">
+            Who I am
+        </h1>
+        <h2>
+            <u>_________________________</u>
+        </h2>
+    </div>
+    
+    <div class="boxed">
+        <span class="half_highlight">
+            Electrical and Digital Engineering
+        </span> 
+    </div>
+    
+    <div class="row">
+        <div class="about-col">
+            <p>
+                I am currently in my third year of completing my bachelor's degree in Electrical Engineering with a minor in Digital Engineering at University of Calgary. My pursuit in Electrical Engineering stems from my interest in technology and how it is integrated in almost every aspect of modern society. It motivates me to think that technology continues to evolve and advance in ways that can drastically change the world. I want to be able to contribute to the evolution and advancement in technology that will help bring solutions to problems and issues that currently is affecting the world.  
+                <br>
+                <br>
+                Aside from the studies, I enjoy spending time in my extracurricular activities. One of my extracurricular activies is playing soccer at the Calgary Sports & Social Club with a team of 15 people. Our team name is "The Philosophers."  
+                <br>
+                <br>
+                In addition, I enjoy playing the guitar, spending time with friends and family, playing sports and videogames, taking strolls around the city, reading and journaling, learning languages, and travelling to other countries. 
+            </p>
+        </div>
+    </div>
+    
+</section>
+
+<!------------------------------------------------------------------------------------------------------EDUCATION------------------------------------------------------------------------------------------------------>
+    
+<section class="education" id="education">
+    
+    <div class="education-title">
+        <h1 style="font-size:60px;">
+            What I study
+        </h1>
+    </div>
+    
+    <div class="row">
+        <div class="education-col">
+            <h3>Electrical Engineering</h3>
+            <p>
+                As an Electrical Engineering student, I am given opportunities to learn the theories and fundamentals in software, hardware, and firmware. In addition, I am familiar with the concepts in mathematics and physics to use as tools in designing and analyzing circuit behaviour. 
+                <br>
+                <br>    
+                <b>Course Concepts</b>
+                <br>
+                In mathematics, I am familiar with the concepts in linear algebra, calculus, multi-variable calculus, vector calculus, differential calculus, Fourier and Laplace domains, and probability and random variables.
+                <br>
+                In physics, I am familiar with the concepts in electricity and magnetism, acoustics, and quantum mechanics. 
+                <br>
+                <br>
+                <b>Software Concepts</b>
+                <br>
+                I am eager to apply and further enhance my skills in software, including but not limited to, artificial intelligence and machine learning (Python - Scikit-learn and Fastai), app development (Android Studio - Kotlin), web development (HTML and CSS), embedded systems (Raspberry Pi, MPLAB Microcontroller, VHDL - ModelSim FPGA), AutoCad (Fusion 360), and other languages such as C, Processing, MATLAB, and Arduino. 
+                <br>
+                <br>
+                <b>Hardware Concepts</b>
+                <br>
+                In addition, I am also eager to apply the theories and principles I acquired in my studies ranging from logic gates and Karnaugh maps to Computer Microarchitecture; from signal analysis to operational amplifiers (Opamp) and filter and controller design; from BJT and MOSFET transistor design and analysis to amplifiers and circuit design and analysis. Lastly, I am also familiar with transformer and transmission line design and analysis. 
+            </p>
+        </div>
+        
+        <div class="education-col">
+            <h3>Digital Engineering</h3>
+            <p>
+                Digital Engineering is my minor at University of Calgary. Digital Engineering involves applying the language Python to explore concepts in web servers (Flask, HTML, CSS, Javascript), graphical user interfaces (G.U.I - Tkinter), command line interfaces (C.L.I), programming methods (Hash functions, Recursion, Depth-first search, and Backtracking), and machine learning (Scikit-learn and Fastai). 
+                <br>
+                <br>
+                Furthermore, my minor explores the methods of training machine learning models. The general idea is to prepare the dataset, initialize the dataloaders, define the neural network, create the learner, and call fit to train the model. However, there are certain considerations at each step.
+                <br>
+                <br>
+                <b>Considerations:</b>
+                What is the type of learning: regression, classification, clustering? What is the size of the dataset? What are the sizes of the training and validation datasets? What are the augmentations needed on the dataset? What is the size of the architecture and how many layers? What is the learning rate to be used to train? How many epochs to train? Is the model overfitting? What is the accuracy and the loss of the model performance? Is the confusion matrix optimal?
+            </p>
+        </div>
+      
+    </div>
+</section>
+    
+<!--------------------------------------------------------------------------------------------------------------------PROJECTS------------------------------------------------------------------------------------------------>
+<section class="projects" id="project">
+    
+    <div class="projects-title">
+         <h1 style="font-size:60px;">
+            Projects
+        </h1>
+    </div>
+    <p1 class="subtitle-projects">
+        (Click each image for more information)
+    </p1>
+    
+    <div class="row">
+        <div class="projects-col">
+            <!--Portfolio Item 1-->
+            <h3>Weather Webserver</h3>
+            <a href="weather_webserver.html" class="portfolio__item">
+            <img src="images/weather_server.png" alt="Weather Web Server" class="portfolio__img"></a>
+        </div>
+        
+        <div class="projects-col">
+             <!--Portfolio Item 2-->
+            <h3>Covid Statistic Webserver</h3>
+            <a href="covid_webserver.html" class="portfolio__item">
+            <img src="images/covidwebserver.png" alt="Covid Statistic Webserver" class="portfolio__img">
+            </a>
+        </div>  
+    </div>
+    
+    <div class="row">
+        <div class="projects-col">
+             <!--Portfolio Item 3-->
+             <h3>Utilities Glasses</h3>
+             <a href="edith.html" class="portfolio__item">
+             <img src="images/utilitiesglasses.jpg" alt="EDITH Replica" class="portfolio__img">
+             </a>
+        </div>
+        
+        <div class="projects-col">
+             <!--Portfolio Item 4-->
+            <h3>Utilities A.I. (Ronald)</h3>
+            <a href="utilities_ai.html" class="portfolio__item">
+            <img src="images/bigdata.jpg" alt="Ronald Utilities A.I." class="portfolio__img">
+            </a>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="projects-col">
+             <!--Portfolio Item 5-->
+             <h3>PONG</h3>
+             <a href="pong.html" class="portfolio__item">
+             <img src="images/pong.png" alt="Pong Game" class="portfolio__img">
+             </a>
+        </div>
+        
+        <div class="projects-col">
+             <!--Portfolio Item 6-->
+             <h3>ParkEase</h3>
+             <a href="parkease.html" class="portfolio__item">
+             <img src="images/parkease.jpg" alt="ParkEase" class="portfolio__img">
+             </a>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="projects-col">
+             <!--Portfolio Item 7-->
+             <h3>Music Player</h3>
+             <a href="music_player.html" class="portfolio__item">
+             <img src="images/musicplayer.png" alt="Music Player" class="portfolio__img">
+             </a>
+        </div>
+        
+        <div class="projects-col">
+             <!--Portfolio Item 8-->
+             <h3>LED Pattern Display</h3>
+             <a href="led_pattern_display.html" class="portfolio__item">
+             <img src="images/ledpattern.png" alt="LED pattern display" class="portfolio__img">
+             </a>
+        </div>
+    </div>
+</section>
+    
+<!---------------------------------------------------------------------------------------------------CONTACT------------------------------------------------------------------------------------------------->
+<footer class="contact" id="footer">
+    
+    <ul class="row-social">
+        <li class="social-list__item mail"><a class="social-list__link" href="mailto:johnmarivsantos@gmail.com"><i class="fa fa-envelope"></i></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/johnsantosenel/"><i class="fa fa-linkedin-square"></i></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="https://github.com/JohnVSantos"><i class="fa fa-github" ></i></a></li>
+    </ul>
+        
+    <h1 class="footer_subtitle">Website Designed and Coded by John Santos</h1>
+</footer>
+    
+    
+<!-----------------------------------------------------------------------------------------Javascript for Toggle Menu------------------------------------------------------------------------------------------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+         function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>

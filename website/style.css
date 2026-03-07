@@ -1,0 +1,623 @@
+/*-------------------------------------------------------------------------------------------------HOME PAGE------------------------------------------------------------------------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lobster', cursive;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.header-home{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/schulich_building.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/*-----------------------------------------------------------------------------Top Navigation-------------------------------------------------------------------------------------*/
+
+nav{
+    display: flex;
+    padding: 2% 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 150px; 
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 4px 15px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+/*--------------------------------------------------------------------------Introduction Section Details-------------------------------------------------------------------------*/
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+
+.picLeft{
+    float: left;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-180%, -50%);
+    text-align: center;
+}
+
+.boxed{
+  background: #FFD700 ;
+  box-shadow: 10px 16px black;
+  border-radius: 10mm;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  font-size: 30px;
+  flex-basis: 40%;
+  color: #000;
+}
+
+.half_highlight{
+    background: linear-gradient(to top, gold 50%, transparent 50%);
+}
+
+.contact-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.contact-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+nav .fa{
+    display: none;
+}
+
+/*------------------------------------------------------------------------Small Screen Accomodations---------------------------------------------------------------------------*/
+
+@media(max-width: 700px){
+    .text-box{
+        width: 90%;
+        color: #fff;
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-30%, -50%);
+        text-align: center;
+    }
+    
+    .text-box h1{
+        font-size: 40px;
+    }
+    
+    .picLeft{
+        height: 240px;
+        width: 150px;
+        margin-left: 10px;
+    }
+    
+    .boxed{
+        font-size: 15px;
+    }
+    
+    .nav-links ul li{
+        display: block;
+    }
+    
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    
+    .nav-links ul{
+        margin: 20px;
+    }
+}
+
+/*---------------------------------------------------------------------------About Me Section Details----------------------------------------------------------------------------*/
+
+.aboutme{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background: #7393B3;
+}
+
+.about-col{
+    flex-basis: 90%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #fff;
+}
+
+.aboutme-title h1{
+    font-weight: 600;
+    color: #fff;
+}
+
+.row{
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*----------------------------------------------------------------------------Education Section Details--------------------------------------------------------------------------*/
+
+.education{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/education.png);
+}
+
+.education-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-top: 0.5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #fff;
+}
+
+.education-title h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.education-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+
+/*-------------------------------------------------------------------------Small Screen Accomodations------------------------------------------------------------------------*/
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+        max-width: 90%;
+        margin-left: 4%;
+    }
+    
+    .projects-col img{
+        max-width: 50%;  
+    }
+    
+    .project-about-col video{
+        max-width: 100%;
+    }
+}
+
+/*---------------------------------------------------------------------------Project Section Details--------------------------------------------------------------------------*/
+
+.projects{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/project.jpg);
+}
+
+.projects-title h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.subtitle-projects{
+    color: #fff;
+}
+
+.projects-col{
+  background: #FFD700 ;
+  box-shadow: 10px 16px black;
+  border-radius: 10mm;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  font-size: 30px;
+  flex-basis: 40%;
+  color: #000;
+}
+
+.projects-col:hover{
+    transform: scale(1.1);
+    opacity:0.7;
+    transition: 1s;
+}
+
+/*--------------------------------------------------------------------------------Contact Section Details---------------------------------------------------------------------*/
+
+.contact{
+    width: 100%;
+    text-align: center;
+    padding-top: 1px;
+    background: #000;
+}
+
+.row-social{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 40px;
+}
+
+.social-list__link:hover{
+	opacity:0.7;
+}
+
+.footer_subtitle{
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 100px;
+}
+
+/*--------------------------------------------------------------------------------------------INTERPERSONAL PAGE----------------------------------------------------------------------------------------------*/
+
+.header-interpersonal{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/interpersonal.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+/*-------------------------------------------------------------------------------------------Weather Webserver Page------------------------------------------------------------------------------------------*/
+
+.project-about-title h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.project-about-col{
+    flex-basis: 90%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #fff;
+}
+
+.header-project-weather-webserver{
+    min-height: 100vh;
+    width: 100%;
+    background: #7393B3;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.about-project-weather-webserver{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/education.jpg);
+}
+
+.video-weather-webserver{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background: #7393B3;
+}
+
+/*---------------------------------------------------------------------------------------Covid Statistic Webserver Page--------------------------------------------------------------------------------------*/
+
+.header-project-covid-webserver{
+    min-height: 100vh;
+    width: 100%;
+    background: #7393B3;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.about-project-covid-webserver{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/education.jpg);
+}
+
+.video-covid-webserver{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background: #7393B3;
+}
+
+/*---------------------------------------------------------------------------------------------EDITH Replica Page-------------------------------------------------------------------------------------------*/
+
+.header-project-glasses{
+    min-height: 100vh;
+    width: 100%;
+    background: #7393B3;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.about-project-glasses{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/education.jpg);
+}
+
+/*------------------------------------------------------------------------------------------Utilities AI (RONALD) Page------------------------------------------------------------------------------------*/
+
+.header-project-ronald{
+    min-height: 100vh;
+    width: 100%;
+    background: #7393B3;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.about-project-ronald{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/education.jpg);
+}
+
+.video-ronald{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background: #7393B3;
+}
+
+/*-----------------------------------------------------------------------------------------------Pong Page----------------------------------------------------------------------------------------*/
+
+
+.header-project-pong{
+    min-height: 100vh;
+    width: 100%;
+    background: #7393B3;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.about-project-pong{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/education.jpg);
+}
+
+.video-pong{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background: #7393B3;
+}
+
+/*-----------------------------------------------------------------------------------------------ParkEase Page-------------------------------------------------------------------------------------------*/
+
+.header-project-parkease{
+    min-height: 100vh;
+    width: 100%;
+    background: #7393B3;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.about-project-parkease{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/education.jpg);
+}
+
+.video-parkease{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background: #7393B3;
+}
+
+/*---------------------------------------------------------------------------------------------Music Player Page------------------------------------------------------------------------------------------*/
+
+.header-project-music-player{
+    min-height: 100vh;
+    width: 100%;
+    background: #7393B3;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.about-project-music-player{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/education.jpg);
+}
+
+.video-music-player{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background: #7393B3;
+}
+
+/*-----------------------------------------------------------------------------------------LED Pattern Display Page---------------------------------------------------------------------------------------*/
+
+.header-project-led-pattern{
+    min-height: 100vh;
+    width: 100%;
+    background: #7393B3;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.about-project-led-pattern{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/education.jpg);
+}
+
+.video-led-pattern{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background: #7393B3;
+}
+
+/*------------------------------------------------------------------------------------------Notes & Schematics Page---------------------------------------------------------------------------------------*/
+
+
+.header-notes_schematics{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+    padding-top: 200px;
+}
+
+.header-notes_schematics ul {
+  display: table;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.notes-s1{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background: #FFD700;
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 35px;
+}
+
+.notes-s2{
+    width: 100%;
+    text-align: center;
+    padding-top: 50px;
+    background: #7393B3;
+    display: grid;
+    grid-auto-flow: row;
+    grid-row-gap: 35px;
+}
+
+.notes-title h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #000;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 57%;
+}
+
+.center-large {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+.center-medium {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+.notes-subtitle {
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+}
