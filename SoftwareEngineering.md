@@ -1,6 +1,6 @@
 # Software Engineering
 
-The software concepts listed below shows what I have encountered throughout my internship in Au-Zone Technologies.
+The software concepts listed below shows what I have encountered throughout my internship at Au-Zone Technologies.
 
 * Object Oriented Programming
 * Unit-testing, functional testing: PyTest, Robot Framework
@@ -37,3 +37,4 @@ The software concepts listed below shows what I have encountered throughout my i
 * System Product Requirements, Software Process Specification, ReadME shields
 * tmux terminals
 * Kalman Filter
+* AWS
