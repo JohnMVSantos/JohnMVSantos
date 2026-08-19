@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>LED Pattern Display Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        p{text-align: left;}
+    </style>
+</head>   
+    <body>
+        
+        <section class="header-project-led-pattern">    
+            <div class="text-box">
+                <img src="images/ledpattern.png" width="350" height="300" alt="A picture of the LED pattern display" class="picLeft" />
+                <h1>
+                    LED Pattern <br> Display 
+                </h1>
+                <div class="boxed">
+                    <span class="half_highlight">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A device that lights up a series of LEDs in a pattern. 
+                    </span> 
+                </div>
+            </div>
+        </section>
+        
+        <section class="about-project-led-pattern">
+        
+            <div class="project-about-title">
+                <h1 style="font-size:60px;">
+                    About the Project
+                </h1>
+            </div>
+    
+            <div class="row">
+                <div class="project-about-col">
+                    <p>
+                      This is one of the activities I was tasked to do in the course “Computer Organization (ENCM 369)” at University of Calgary. I used the language C to code the LED pattern. The LED pattern is stored in an array. A for loop is used to iterate over the array with a delay of 1 microsecond per pattern (amount of time for light display). This project makes use of the PICkit microcontroller and MPLAB to run the C code. 
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="project-about-col">
+                     <h3>LED PATTERN</h3>
+                     <img src="images/pattern.png" width="600" height="400" alt="A pattern for the LEDs" >
+                </div>
+                
+                <div class="project-about-col">
+                     <h3>Schematic</h3>
+                     <img src="images/led_pattern_schematic.png"  width="600" height="400" alt="A schematic for the LED pattern display" >
+                </div>
+            </div>
+            
+        </section>
+        
+        <section class="video-led-pattern">
+            <div class="project-about-title">
+                <h1 style="font-size:30px;">
+                     Check out the video below for the project demonstration!
+                </h1>
+            </div>
+            <div class="row">
+                <div class="project-about-col">
+                    <video width="900" height="500" controls>
+                        <source src="video/LEDpatterndisplay.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>
