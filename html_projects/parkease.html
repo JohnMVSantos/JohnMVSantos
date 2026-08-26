@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ParkEase | Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+				<div class="top">
+					<div data-site-logo></div>
+
+					<nav id="nav">
+						<ul>
+							<li><a href="../index.html#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+							<li><a href="../index.html#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+							<li><a href="../portfolio.html" id="portfolio-link" class="active"><span class="icon solid fa-th">Portfolio</span></a></li>
+							<li><a href="../certifications.html" id="certifications-link"><span class="icon solid fa-graduation-cap">Certifications</span></a></li>
+							<li><a href="../index.html#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+						</ul>
+					</nav>
+				</div>
+				<div data-site-social></div>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+				<section id="parkease" class="four">
+					<div class="container">
+						<header>
+							<h2>ParkEase</h2>
+							<p>A collision avoidance system for cars (January 2023 - April 2023)</p>
+						</header>
+
+						<article>
+							<a href="#" class="image featured">
+								<img src="../images/parkease.jpg" alt="ParkEase product" />
+							</a>
+
+							<h3>About the Project</h3>
+							<p>
+								ParkEase is a device designed to assist drivers during the parking process.
+								It uses a modular sensor system to improve a driver's spatial awareness and
+								visibility by communicating the distances to objects surrounding the vehicle.
+								ParkEase was developed by a team of five as part of the requirements for
+								<em>ENEL 400</em> at the University of Calgary.
+							</p>
+
+							<p>
+								ParkEase features an LCD screen that displays a graphical user interface
+								(GUI) with distance information for objects behind the vehicle. An ultrasonic
+								sensor is mounted to the rear of the vehicle using magnets to measure the
+								distance to nearby objects. A Raspberry Pi 4 serves as the main computer,
+								processing the sensor data and running the GUI. Circuit protection components,
+								including voltage regulators, a fuse, and a cooling fan, are used to help
+								protect the hardware.
+							</p>
+
+							<p>
+								My primary responsibility was designing the hardware enclosure using
+								Fusion 360 and developing the attachment mechanism for mounting the enclosure
+								securely to the vehicle.
+							</p>
+
+							<div class="row parkease-gallery">
+								<div class="col-6 col-12-small">
+									<h4>Enclosure</h4>
+									<img src="../images/parkease_enclosure.jpg" alt="ParkEase enclosure" />
+								</div>
+								<div class="col-6 col-12-small">
+									<h4>Prototype</h4>
+									<img src="../images/parkease_prototype.jpg" alt="Complete ParkEase prototype in enclosure" />
+								</div>
+								<div class="col-6 col-12-small">
+									<h4>System Block Diagram</h4>
+									<img src="../images/parkease_system_diagram.png" alt="ParkEase system block diagram" />
+								</div>
+								<div class="col-6 col-12-small">
+									<h4>Ultrasonic Sensor</h4>
+									<img src="../images/parkease_sensor.jpg" alt="Ultrasonic sensor attached to the rear of a vehicle" />
+								</div>
+							</div>
+
+							<h3>Project Demonstration</h3>
+							<video controls>
+								<source src="../videos/parkease.mp4" type="video/mp4" />
+							</video>
+						</article>
+					</div>
+				</section>
+			</div>
+
+		<div data-site-footer></div>
+		<script src="../assets/js/site.js"></script>
+	</body>
+</html>

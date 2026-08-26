@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>LED Pattern Display | Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+				<div class="top">
+					<div data-site-logo></div>
+
+					<nav id="nav">
+						<ul>
+							<li><a href="../index.html#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+							<li><a href="../index.html#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+							<li><a href="../portfolio.html" id="portfolio-link" class="active"><span class="icon solid fa-th">Portfolio</span></a></li>
+							<li><a href="../certifications.html" id="certifications-link"><span class="icon solid fa-graduation-cap">Certifications</span></a></li>
+							<li><a href="../index.html#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+						</ul>
+					</nav>
+				</div>
+				<div data-site-social></div>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+				<section id="led-pattern" class="four">
+					<div class="container">
+						<header>
+							<h2>LED Pattern Display</h2>
+							<p>A device that lights up a series of LEDs in a pattern (January 2022 - April 2022)</p>
+						</header>
+
+						<article>
+							<a href="#" class="image featured">
+								<img src="../images/led_pattern.png" alt="A picture of the game PONG" />
+							</a>
+
+							<h3>About the Project</h3>
+							<p>
+								This was one of the activities I completed for the course
+								<em>Computer Organization (ENCM 369)</em> at the University of Calgary.
+								I used the C programming language to create an LED pattern, which was
+								stored in an array.
+							</p>
+
+							<p>
+								A <code>for</code> loop iterates through the array with a delay of
+								1 microsecond between each pattern, controlling the amount of time each
+								LED pattern is displayed. This project used a PICkit microcontroller
+								and MPLAB to compile and run the C code.
+							</p>
+
+                            <div class="row parkease-gallery">
+								<div class="col-6 col-12-small">
+									<h4>LED Pattern</h4>
+									<img src="../images/pattern.png" alt="LED pattern display" />
+								</div>
+								<div class="col-6 col-12-small">
+									<h4>Circuit Schematic</h4>
+									<img src="../images/led_pattern_schematic.png" alt="Circuit schematic for the LED pattern display" />
+								</div>
+							</div>
+
+							<h3>Project Demonstration</h3>
+							<video controls>
+								<source src="../videos/LEDpatterndisplay.mp4" type="video/mp4" />
+							</video>
+						</article>
+					</div>
+				</section>
+			</div>
+
+		<div data-site-footer></div>
+		<script src="../assets/js/site.js"></script>
+	</body>
+</html>

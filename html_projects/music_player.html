@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Music Player | Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div data-site-logo></div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="../index.html#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+                                <li><a href="../index.html#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="../portfolio.html" id="portfolio-link" class="active"><span class="icon solid fa-th">Portfolio</span></a></li>
+                                <li><a href="../certifications.html" id="certifications-link"><span class="icon solid fa-graduation-cap">Certifications</span></a></li>
+								<li><a href="../index.html#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div data-site-social></div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Music Player -->
+					<section id="music-player" class="four">
+						<div class="container">
+
+							<header>
+								<h2>The Music Player</h2>
+								<p>A device that plays musical tunes based on an array of frequencies (January 2022 - April 2022)</p>
+							</header>
+
+							<article>
+								<a href="#" class="image featured">
+									<img src="../images/music_player.png" alt="A picture of the Music Player Project" />
+								</a>
+
+								<h3>About the Project</h3>
+
+								<p>
+									This was one of the activities I completed for the course
+									<em>Computer Organization (ENCM 369)</em> at the University of Calgary.
+									I used the C programming language to generate and play musical tunes using a
+									speaker.
+								</p>
+
+								<p>
+									I initialized interrupts and an array containing values used to generate a
+									sine wave. I then defined the notes of the song in a header file,
+									<code>music.h</code>, with each note corresponding to its respective frequency.
+									Since only a single sine wave was defined, I manipulated the frequency of the
+									sine wave to produce different musical notes.
+								</p>
+
+								<p>
+									The sine wave consists of 256 values representing one complete period. By
+									incrementing through the array by 4 values at a time, there are
+									<em>256 / 4 = 64 steps</em> per period. To generate a specific note,
+									I used an interrupt function that controls the time interval between each
+									step of the sine wave. For example, middle C has a frequency of approximately
+									262 Hz, giving it a period of <em>1 / 262 ≈ 3.78 ms</em>. Dividing
+									this period by the 64 steps gives approximately <em>59 μs</em> between
+									each step of the sine wave.
+								</p>
+
+								<p>
+									The resulting signal is connected to the non-inverting input of an op-amp,
+									which drives the speaker. By controlling the frequency of the generated sine
+									wave, the speaker produces the corresponding musical notes, which are
+									combined to play the desired tune.
+								</p>
+
+								<h3>Project Demonstrations</h3>
+
+								<div class="row">
+									<div class="col-6 col-12-small">
+										<h4>Twinkle Twinkle Little Star</h4>
+										<video controls>
+											<source src="../videos/twinklestar.mp4" type="video/mp4" />
+										</video>
+									</div>
+
+									<div class="col-6 col-12-small">
+										<h4>O'Canada</h4>
+										<video controls>
+											<source src="../videos/ocanada.mp4" type="video/mp4" />
+										</video>
+									</div>
+								</div>
+							</article>
+
+						</div>
+					</section>
+
+
+			</div>
+
+		<div data-site-footer></div>
+
+		<script src="../assets/js/site.js"></script>
+
+	</body>
+</html>

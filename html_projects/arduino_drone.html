@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Arduino Drone | Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div data-site-logo></div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="../index.html#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+                                <li><a href="../index.html#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="../portfolio.html" id="portfolio-link" class="active"><span class="icon solid fa-th">Portfolio</span></a></li>
+                                <li><a href="../certifications.html" id="certifications-link"><span class="icon solid fa-graduation-cap">Certifications</span></a></li>
+								<li><a href="../index.html#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div data-site-social></div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Arduino Drone -->
+					<section id="arduino-drone" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Arduino Drone</h2>
+								<p>A quadcopter FPV drone project built with Arduino (May 2025 - Present)</p>
+							</header>
+
+							<article>
+								<a href="#" class="image featured">
+									<img src="../images/prototype_2.1_full.jpg" alt="Arduino Drone" />
+								</a>
+
+								<h3>About the Project</h3>
+								<p>
+									An FPV quadcopter drone is built using Arduino Nano microcontrollers and NRF24L01 radio modules for communication.
+									This project contains two pieces of hardware, the drone and the controller.
+								</p>
+									
+								<p>
+									The drone is built with an Arduino Nano microcontroller, an NRF24L01 radio module, an MPU6050 gyroscope and accelerometer, a BMP085 barometric pressure, temperature, and altitude sensor, DC-to-DC step-down voltage regulator, and a motor driver.
+									The circuit also utilizes filtering capacitors to reduce noise at the power inputs of the components. The motor driver consists of surface mount components; N-channel mosfets, shottky diodes, 10Kohm resistors. The motor driver controls the power delivered to the motors.
+								</p>
+
+								<a href="#" class="image featured">
+									<img src="../images/SCH_drone_schematic_v2.1_1-P1_2026-04-27.png" alt="Drone Schematic" />
+								</a>
+
+								<p>
+									The controller consists of an Arduino Nano microcontroller, an NRF24L01 radio module, a joystick, and SPDT switches to control the drone activation and beeper.
+								</p>
+
+								<a href="#" class="image featured">
+									<img src="../images/SCH_controller_schematic_v2.1_1-P1_2026-04-27.png" alt="Controller Schematic" />
+								</a>
+
+								<p>
+									The assembly involves soldering the components onto a custom PCB that was designed using Fusio360 and EasyEDA. The PCBs were printed using EasyEDA and PCBWay. Once the components are assembled, the firmware that was written in C++ are uploaded into the microcontrollers 
+									to initiate the communication between the drone and the controller. The MultiWii software is used to arm and calibrate the drone for flight stability.
+								</p>
+
+								<div class="row parkease-gallery">
+									<div class="col-6 col-12-small">
+										<h4>Drone PCB</h4>
+										<img src="../images/easyeda_drone_3d.jpg" alt="Drone PCB" />
+									</div>
+									<div class="col-6 col-12-small">
+										<h4>Controller PCB</h4>
+										<img src="../images/easyeda_controller_3d.jpg" alt="Controller PCB" />
+									</div>
+								</div>
+
+								<h3 class="project-repositories-title">Project Repositories</h3>
+								<div class="repo-links">
+									<a href="https://github.com/JohnMVSantos/NRF24-MultiWii-Drone/tree/main" class="button icon brands fa-github" target="_blank" rel="noopener noreferrer">Legacy Source</a>
+									<a href="https://github.com/BrushQuadX/brushquadx-multiwii" class="button icon brands fa-github" target="_blank" rel="noopener noreferrer">Current Source</a>
+								</div>
+								
+								<p>
+									This project was inspired by 
+									<a href="https://youtu.be/Sa6EslOHsI0?si=ChN_lPsvf0asMIzm" target="_blank">Max Imagination's</a> and
+									<a href="https://youtu.be/J0x4ChjUS00?si=fSWjL9ePFeI5w-cn" target="_blank">Electronoobs</a> drone projects.
+								</p>
+								
+								<h3>Drone Demonstration</h3>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/2DVROdYIQ7A" title="Drone Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+								<h3>Project Details</h3>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/SVGbemywxcY" title="Project Details" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							</article>
+
+						</div>
+					</section>
+
+
+			</div>
+
+		<div data-site-footer></div>
+
+		<script src="../assets/js/site.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Weather Web Server | Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<div id="header">
+				<div class="top">
+					<div data-site-logo></div>
+
+					<nav id="nav">
+						<ul>
+							<li><a href="../index.html#top" id="top-link"><span class="icon solid fa-home">Intro</span></a></li>
+							<li><a href="../index.html#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+							<li><a href="../portfolio.html" id="portfolio-link" class="active"><span class="icon solid fa-th">Portfolio</span></a></li>
+							<li><a href="../certifications.html" id="certifications-link"><span class="icon solid fa-graduation-cap">Certifications</span></a></li>
+							<li><a href="../index.html#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+						</ul>
+					</nav>
+				</div>
+				<div data-site-social></div>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+				<section id="weather" class="four">
+					<div class="container">
+						<header>
+							<h2>The Weather Web Server</h2>
+							<p>A webserver that displays the weather information in any city.</p>
+						</header>
+
+						<article>
+							<a href="#" class="image featured">
+								<img src="../images/weather_server.png" alt="A picture of the weather web server" />
+							</a>
+
+							<h3>About the Project</h3>
+							<p>
+								This project involves using the language Python and the Flask library to initiate and deploy the webserver into service and HTML and CSS to manage the layout of the websever. In order to run the webserver, the following code needs to be present: <br><br> app = Flask(__name__) <br> @app.route() <br><br> if __name__ == '__main__': <br> app.debug = True <br> app.run() <br><br> To fetch the weather information at any location, an API was used to request information from the website openweathermap.org by passing in a key. The static and the layout templates involving the CSS and HTML files were imported into the python script and rendered using the library render_template that is part of Flask. 
+							</p>
+
+							<h3>Project Demonstration</h3>
+							<video controls>
+								<source src="../videos/weather.mp4" type="video/mp4" />
+							</video>
+						</article>
+					</div>
+				</section>
+			</div>
+
+		<div data-site-footer></div>
+		<script src="../assets/js/site.js"></script>
+	</body>
+</html>
