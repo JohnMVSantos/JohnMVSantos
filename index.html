@@ -10,6 +10,17 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+		</script>
+		<script type="text/javascript">
+		(function(){
+			emailjs.init({
+				publicKey: "thzUTd9qVkiS-XnSJ",
+			});
+		})();
+		</script>
+		<script src="assets/js/email.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -127,12 +138,12 @@
 
 							<p>If you would like to collaborate or have any questions, feel free to send me a message!</p>
 
-							<form method="post" action="#">
+							<form onsubmit="sendMail(event)">
 								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" id="name" name="name" placeholder="Your Name" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" id="email" name="email" placeholder="Your Email" /></div>
 									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
+										<textarea name="message" id="message" placeholder="Your Message"></textarea>
 									</div>
 									<div class="col-12">
 										<input type="submit" value="Send Message" />
